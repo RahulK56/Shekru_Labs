@@ -1,0 +1,197 @@
+/* Ensure layout stability */
+.section-heading {
+    margin-bottom: 1.5em; /* Consistent spacing below the heading */
+  }
+  
+  .section-heading h2 {
+    margin-bottom: 0.5em; /* Spacing between the heading and the separator */
+  }
+  
+  .square {
+    position: relative;
+    height: 10px; /* Fixed height to prevent layout shifts */
+  }
+  
+  .separator-left, .separator-right {
+    display: block;
+    height: 10px; /* Fixed height to prevent layout shifts */
+  }
+  
+  .text-end img {
+    display: block; /* Ensure the image does not cause layout shifts */
+  }
+  
+  /* Reserve space for images */
+  img {
+    display: block; /* Prevent inline layout shifts */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .float-start {
+    margin-right: 1em; /* Consistent spacing */
+  }
+  
+  .about-ceo {
+    position: relative;
+  }
+  
+  .inner-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px; /* Adjust height as needed */
+  }
+  
+  /* Ensure text is stable */
+  p, span {
+    font-family: Arial, sans-serif; /* Fallback font to maintain layout consistency */
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6; /* Improve readability and reduce layout shifts */
+  }
+  
+
+
+
+
+
+
+  /* Ensure stability for icons and elements */
+.attr-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .cart-search, .top-social-icon {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cart-search li, .top-social-icon li {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .cart-search img, .top-social-icon i {
+    display: block; /* Ensures that images and icons do not shift */
+  }
+  
+  .top-social-icon i {
+    font-size: 1.5rem; /* Adjust as needed */
+    margin: 0 0.5rem; /* Consistent spacing */
+  }
+  
+  /* Ensure icons have fixed sizes */
+  img {
+    display: block; /* Avoids inline layout shifts */
+    height: auto;
+    width: auto; /* Maintain aspect ratio */
+  }
+
+
+
+
+
+
+
+  .info-item {
+    display: flex;
+    align-items: flex-start; /* Ensure items are aligned at the start */
+    margin-bottom: 1em; /* Spacing between items */
+}
+
+.icon {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em; /* Space between icon and text */
+}
+
+.icon i {
+    font-size: 1.5rem; /* Ensure consistent icon size */
+}
+
+p {
+    margin: 0; /* Remove default margins */
+}
+
+.font-weight-600 {
+    font-weight: 600; /* Ensure font weight is applied */
+}
+
+/* Ensure responsiveness and consistent spacing */
+@media (max-width: 991px) {
+    .info-item {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+    }
+}
+
+
+
+
+
+
+
+.bg-img {
+    background-size: cover; /* Ensures the background image covers the footer */
+    background-position: center; /* Centers the background image */
+}
+
+.icon {
+    width: 40px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5em; /* Space between icon and text */
+}
+
+.icon i {
+    font-size: 1.5rem; /* Consistent icon size */
+}
+
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 1em; /* Space between list items */
+}
+
+.footer-social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social-icons li {
+    display: inline-block;
+    margin-right: 0.5em; /* Space between social icons */
+}
+
+.footer-bar {
+    text-align: center;
+    padding: 1em 0; /* Ensure consistent spacing */
+}
+
+.footer-bar .container {
+    display: flex;
+    justify-content: center; /* Center content */
+    align-items: center;
+}
+
+.footer-bar p {
+    margin: 0;
+}
+
+.current-year {
+    font-weight: bold;
+}
